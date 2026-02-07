@@ -1005,6 +1005,85 @@ body {
     margin: 0 -0.5rem;
 }
 
+/* ===== NEW: TRANSIT DAY STYLING ===== */
+.nav-link.transit {
+    color: #9B59B6;
+}
+
+.mobile-link.transit-link {
+    border-left: 3px solid #9B59B6;
+    padding-left: calc(1rem + 3px);
+}
+
+.transit-day {
+    position: relative;
+}
+
+.transit-day::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #9B59B6, #3498DB);
+}
+
+.transit-banner {
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, rgba(155, 89, 182, 0.2) 0%, rgba(52, 152, 219, 0.1) 100%);
+    border: 1px solid rgba(155, 89, 182, 0.3);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.next-day-banner {
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, rgba(241, 196, 15, 0.15) 0%, rgba(230, 126, 34, 0.1) 100%);
+    border: 1px solid rgba(241, 196, 15, 0.3);
+    border-radius: 10px;
+    margin: 1.5rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.tip-card {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tip-card h4 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.tip-card ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+}
+
+.tip-card li {
+    padding: 0.25rem 0;
+    padding-left: 1.25rem;
+    position: relative;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.tip-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
 /* ===== NEW: EXTENDED DAY STYLING ===== */
 .extended-day {
     position: relative;
